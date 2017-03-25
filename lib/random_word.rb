@@ -1,14 +1,15 @@
 class RandomWord
   attr_reader :word
 
-  WORDS = %w(programming monkeybusiness rubyesque styleguide)
+  #WORDS = %w(programming monkeybusiness rubyesque styleguide)
+  WORDS = ["cat"]
 
   def initialize
     @word = WORDS.sample
   end
 
   def word_length
-    @word.count
+    return @word.count
   end
 
   def set_good_guess
