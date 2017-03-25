@@ -7,7 +7,13 @@ class RandomWord
     @word = WORDS.sample
   end
 
-  def positions_for(characters: [])
-    # for you to implement :)
+  def word_length
+    @word.count
   end
+
+  def set_good_guess
+    @good_guess = Array.new(word_length, "-")
+  end
+
+
 end
