@@ -5,7 +5,6 @@ require File.expand_path("../text", __FILE__)
 class Hangman
   def initialize
     @random_word = RandomWord.new
-    #@random_word = "hello"
     @random_word_letters = @random_word.word.chars.to_a
     @bad_guesses_left = 10
     @bad_guess = []
